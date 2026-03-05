@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Networking Concepts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="networking.html">Networking Concepts</a>
+  </nav>
+  <main>
+    <h1>Networking Concepts</h1>
+
+    <h2>DNS Resolution</h2>
+    <p>DNS (Domain Name System) translates our domain <strong>username.github.io</strong>
+    into an IP address. Run <code>nslookup username.github.io</code> to see this in action.</p>
+
+    <h2>IP Addressing</h2>
+    <p>Our site resolves to both an IPv4 (e.g., 185.199.108.153) and IPv6 address.
+    GitHub Pages uses Fastly's CDN, so the IP may vary by location.</p>
+
+    <h2>HTTP vs HTTPS</h2>
+    <p>Our site enforces HTTPS. HTTP traffic is automatically redirected.
+    HTTPS uses TLS encryption to protect data in transit.</p>
+
+    <h2>Security Headers</h2>
+    <p>GitHub Pages automatically serves security headers including
+    <code>Strict-Transport-Security</code> which enforces HTTPS.</p>
+  </main>
+</body>
+</html>
